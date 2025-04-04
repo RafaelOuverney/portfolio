@@ -450,4 +450,22 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
+
+    .social-media{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-card{
+        width: 70%;
+    }
+
+    .contact-methods{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
