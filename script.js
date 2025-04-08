@@ -17,3 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function openNav() {
+    document.getElementById("side-bar-content").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("side-bar-content").style.width = "0%";
+}

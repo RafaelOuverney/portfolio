@@ -9,11 +9,24 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="./chatbot.css">
+    <script src="./chatbot.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="https://kit.fontawesome.com/65f22fe718.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Header -->
     <header>
+        <div class="side-bar">
+            <button class="side-bar-btn" onclick="openNav()">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+                    <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+                    </svg>
+            </button>
+        </div>
+
         <div class="profile">
             <img src="img/1699479727751.jpg" alt="Rafael Ouverney">
             <h1>Rafael Ouverney</h1>
@@ -31,6 +44,39 @@
             <span class="icon icon-search"></span>
         </div> -->
     </header>
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+      <div class="chatbot">
+        <header>
+          <h2 style="margin: auto;">Gemini</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+          <li class="chat incoming">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <p>Olá <br>Como posso te ajudar hoje?</p>
+          </li>
+        </ul>
+        <div class="chat-input">
+          <textarea placeholder="Digite sua mensagem..." spellcheck="false" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+      </div>
+
+    <section class="side-bar-section">
+        <div class="side-bar-content" id="side-bar-content">
+                <ul>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <li><a href="#redes" onclick="closeNav()">Redes</a></li>
+                    <li><a href="#sobre" onclick="closeNav()">Sobre</a></li>
+                    <li><a href="#habilidades" onclick="closeNav()">Habilidades</a></li>
+                    <li><a href="#trabalhos" onclick="closeNav()">Trabalhos</a></li>
+                    <li><a href="#contatos" onclick="closeNav()">Contato</a></li>
+                </ul>
+    </section>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -141,14 +187,6 @@
         <h2>Contatos</h2>
         <div class="contact-methods">
             <div class="contact-card">
-                <a href="tel:+5544988120688" class="contact-card">
-                    <span class="icon icon-phone"></span>
-                    <h3>Telefone</h3>
-                    <p>(44) 98812-0688</p>
-                </a>
-
-            </div>
-            <div class="contact-card">
                 <a href="mailto:rafaelouverney@icloud.com" class="contact-card">
                     <span class="icon icon-email"></span>
                     <h3>E-mail</h3>
@@ -168,9 +206,9 @@
             </div>
         </div>
         <div class="footer-social">
-            <a href="#"><span class="icon icon-github"></span></a>
-            <a href="#"><span class="icon icon-linkedin"></span></a>
-            <a href="#">
+            <a href="https://github.com/RafaelOuverney" target="_blank"><span class="icon icon-github"></span></a>
+            <a href="https://www.linkedin.com/in/rafaelouverney/" target="_blank"><span class="icon icon-linkedin"></span></a>
+            <a href="https://www.behance.net/rafaelbento10" target="_blank">
                 <svg class="icon" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                     <path
